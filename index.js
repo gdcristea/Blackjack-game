@@ -35,12 +35,12 @@ function startedGame() {
 
 function startGame() {
     isAlive = true;
+    gameStarted = true;
     let firstCard = getRandomCard();
     let secondCard = getRandomCard();
     cards = [firstCard, secondCard];
     sum = firstCard + secondCard;
     renderGame();
-    gameStarted = true;
 }
 
 function renderGame() {
